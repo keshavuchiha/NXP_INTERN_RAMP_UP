@@ -6,7 +6,7 @@ Python Questions:
 
   2. Create a program which takes 2 directory paths as input (via CMD). Copy the contents of directory 1 to directory 2. 
   Also, change the name of all files/folders by adding preffix 'Copy_' and suffix  "__2". Eg: if a file is ABC.txt then copied file should be named Copy_ABC_2.txt 
+
 C Questions:
-1. Write a C functio, to reverse the string. Like  Input to function is "Hey", the function should return as "YEH".
-2. Make a user defined structure, with int,char and string data values. Create the Object of this structure. Initialise data values of structure using this object
-and print those data values of structure using same object. The object should be created via pointers.
+  1. Make a user defined structure, with int,char and string data values. Create the Object of this structure. Initialise data values of structure using this object
+  and print those data values of structure using same object. The object should be created via pointers.
