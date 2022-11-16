@@ -8,5 +8,12 @@ Python Questions:
   Also, change the name of all files/folders by adding preffix 'Copy_' and suffix  "__2". Eg: if a file is ABC.txt then copied file should be named Copy_ABC_2.txt 
 
 C Questions:
-  1. Make a user defined structure, with int,char and string data values. Create the Object of this structure. Initialise data values of structure using this object
-  and print those data values of structure using same object. The object should be created via pointers.
+  1. Make a user defined structure, which has 3 data values as follows:
+  a) data variable should occupy space of 4 bytes
+  b) data variable cant have range of value greater then 65535.
+  c) variable which can store string.
+  d) variable can only hold binary values.
+  
+  Create the Object of this structure. The Object should be created via pointers
+  Initialise data values of structure using this object
+  and print those data values of structure using same object. Integer values should be printed in HEX format
