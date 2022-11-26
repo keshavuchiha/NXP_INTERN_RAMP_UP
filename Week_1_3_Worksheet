@@ -1,0 +1,2 @@
+Write a program, in which user is asked to choice from 0 to 2. for different tasks. In this program istead os use of switch case, use function pointers.
+  
