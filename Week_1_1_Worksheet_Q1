@@ -1,0 +1,38 @@
+import os
+import random
+import string
+from typing import List
+lines=5000
+low:int=1e15
+high:int=1e20
+file1="../file1.txt"
+file2="../file2.txt"
+def random_string(low:int,high:int):
+    s:List[str]=list()
+    length=random.randint(low,high)
+    for _ in range(length):
+        s.append(random.choice(string.ascii_letters+string.digits))
+    return "".join(s)
+with open(file1,'w+') as f:
+    for _ in range(lines):
+        p:str=random.choice(["int","str"])
+        # print(p)
+        if p=="int":
+            f.write(str(random.randint(low,high))+"\n")
+        else:
+            s=random_string(15,20)
+            f.write(s+'\n')
+    print("file1 done")
+    # print(random.randint(low,high))
+
+with open(file1,"r") as f1,open(file2,"w+") as f2:
+    for line in f1:
+        line=line[:-1]
+        if line.isdigit():
+            num=int(line)
+            f2.write(hex(num)+'\n')
+        else :
+            s=line
+            s=s[::-1]
+            f2.write(s+'\n')
+    print("file2 done")
